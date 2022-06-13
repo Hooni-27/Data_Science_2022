@@ -53,4 +53,29 @@
   - 계산 작업을 편하게 해줄 도구(library)
   - numpy array(numpy 배열) : python list와 비슷  
     -> 2차원 이상의 행렬 계산 사용시 유용
-  
+  - numpy 관련 함수
+    - arange() : 인자로 받는 값 만큼 1씩 증가하는 1차원 array 생성
+      -> 인자 1개 입력 시 : 0부터 입력한 인자, 값만큼의 크기를 가짐
+    - astype(type) : 기존 데이터 형태에서 원하는 data type으로 변경
+    - where(boolean 형태 list) : numpy array 중에서 True인 element만 출력
+    - 최대값, 최솟값, 평균값, 중앙값 : array.max()-최댓값, array.min()-최솟값, array.mean()-평균값, np.median(array)-중앙값
+    - 표준편차, 분산 : array.std()-표준 편차, array.var()-분산
+  - 인덱싱, 슬라이싱, numpy 기본 연산, boolean 연산
+  - python list vs numpy list
+    - numpy array 사용 이유
+      - 문법적인 차이 : 덧셈(numpy : 같은 위치의 element가 더해짐 / python : 기존 list 뒤에 element들이 추가됨), 뺄셈, 곱셈, 나눗셈(numpy : 정상 작동 / python : error)
+      - 성능 차이
+        - numpy : 문법이 간단 + 뛰어난 성능 => 효율적인 데이터 관리
+        - 성능 차이의 이유 : 값들이 저장되는 방식의 차이
+          - python : 다양한 자료형태의 데이터를 한 list에 저장 가능
+          - numpy : 같은 자료형의 data만 들어갈 수 있음 => 속도 개선
+    - python : 단순히 값을 추가하고 제거하는 작업을 하는 경우
+    - numpy : 수치 계산이 많고 복잡한 작업을 진행하는 경우, 행렬과 같은 다차원 배열의 경우
+
+---
+
+## 04. Pandas
+
+### pandas(data frame)
+  - 데이터 보관, 정리, 분석 라이브러리
+  - numpy와의 차이점 : pandas -> numpy를 이용하여 만들어짐 => pandas에서 numpy의 기능 사용 가능
