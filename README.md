@@ -79,3 +79,6 @@
 ### pandas(data frame)
   - 데이터 보관, 정리, 분석 라이브러리
   - numpy와의 차이점 : pandas -> numpy를 이용하여 만들어짐 => pandas에서 numpy의 기능 사용 가능
+  - pandas에 담을수 있는 dtype(data type)
+  - ![image](https://user-images.githubusercontent.com/79882248/174534304-635b6f44-abfd-465e-b135-780a0b6e4f8f.png)
+  - pandas로 데이터 읽어들이기
